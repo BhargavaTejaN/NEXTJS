@@ -1,0 +1,37 @@
+
+create a new Mongodb Database of your choise and import the packages mongoose & mongodb  
+
+create a new folder utils in src 
+myapp/src/utils/db.js 
+
+in db.js make connection to the mongodb using mongoose 
+
+create a new folder models in src for creating schemas  
+myapp/src/models/Post.js
+myapp/src/models/User.js
+
+while exporting the schemes rather than normal exports use this
+
+normal export : 
+const Post = mongoose.model("Post",postSchema);
+export default Post;
+
+mongoose way of doing it:
+export default mongoose.models.Post || mongoose.model('Post',postSchema);
+
+
+Creating API'S 
+
+Here Name should be only route.js 
+
+create a new folder named as api to make our own api's 
+
+for creating posts API
+myapp/src/app/api/posts/[id]/route.js
+myapp/src/app/api/posts/route.js
+
+
+for authorization API 
+myapp/src/app/api/auth/[...nextauth]/route.js
+myapp/src/app/api/auth/register/route.js
+

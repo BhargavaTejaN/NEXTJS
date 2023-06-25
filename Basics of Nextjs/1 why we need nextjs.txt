@@ -1,0 +1,27 @@
+Nextjs is a ReactFramework for the web that is used for building server rendered web applications. 
+
+
+1) React-Router-Dom Alternative === App Router
+
+we can create all pages using a single folder 
+Evey child folder in the app router represents a new page 
+
+
+2) Creating A Full Stack Application 
+
+we can create our own API using Nextjs 
+Create a New Folder api in that we can handle our routs, where as in React We need to use a framework like express.js 
+
+
+3) Server Side And Client Side Rendering 
+
+we can use server & clinet side components together 
+we can fetch data on the server side and improve the SEO of the application and also create client side components to intract with users 
+server side like APIS, client side like LOGIN 
+
+
+4) Optimization 
+
+it uses code splitting to improve the applications initial load time
+it splits the bundle of the application into smaller chunks and search them users only when needed
+It automatically optimizes the images by compressing them generating multiple sizes for different devices 

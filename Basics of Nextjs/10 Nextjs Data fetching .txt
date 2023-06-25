@@ -1,0 +1,55 @@
+
+Fetching data can be done either using client/server side components 
+
+
+client side 
+
+using fetch in useEffect 
+using a fetching library like React Quary or SWR
+
+in this case our component will be rendered 1st and it willtry to fetch the data 
+
+
+server side 
+
+we will change our components to async components and directly fetch the data from the server 
+
+
+if our data never chnages we can use static Data Fetching 
+
+ex : 
+
+const getData = async () => {
+    const response = await fetch (url,{
+        cache : 'force cache'
+    })
+}
+
+const data = await getData();
+
+
+if our data changes but not too often we can use Revalidate Data 
+ie revalidate everytime after perticular seconds of time 
+
+ex : 
+
+const getData = async () => {
+    const response = await fetch (url,{
+        next : {revalidate : 10}
+    })
+}
+
+const data = await getData();
+
+
+if our data changes all the time and we want to fetch the fresh/new data we can use Dynamic Data fetching 
+
+ex : 
+
+const getData = async () => {
+    const response = await fetch (url,{
+        cache : 'no store'
+    })
+}
+
+const data = await getData();

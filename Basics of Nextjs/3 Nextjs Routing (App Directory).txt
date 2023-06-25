@@ -1,0 +1,30 @@
+
+app/page.js is the Home Page of Nextjs Project
+convert the type form js to jsx 
+
+for every page we create the fileName should be only page.jsx 
+
+To create Different Pages we need to create differrnt folders in app Directory/folder 
+To create Sub pages for a page, we need to create folders inside that parent folder 
+
+                         login
+       dashboard ------> settings                  
+app -> about             analytics
+       blog
+
+if we want to create a new page named as about --> create a new folder in app and in about folder add a new file page.jsx 
+
+for creating a sub pages inside a parent folder 
+like  /blog/blog1. here blog1 is the id, we have some 100 of blogs we can't create manually like we did till now
+inside the parent folder create a new folder with square bracket and folder name inside the square bracket[name of subfolder] 
+
+in my case i want to create a page blog page when i click on a perticular blog should be navigated to that subblog page 
+
+app/blog/[id] in [id] folder create a page.jsx file 
+
+supoose if we have authentication pages like login and signup we can group them in a single folder 
+using (name) this name won't be considered as a page 
+in my case it's (auth)
+
+app/dashboard/(auth)/login
+app/dashboard/(auth)/signup

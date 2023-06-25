@@ -1,0 +1,7 @@
+
+Add a console.log statement and run the server 
+in browsers console if we can't see the console.log statement it's server side rendeing
+we can see that console.log statement in vscode terminal 
+
+and we know how to change server side to client side 
+"use client" add this at the top of the file.

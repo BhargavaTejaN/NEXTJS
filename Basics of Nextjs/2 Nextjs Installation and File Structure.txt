@@ -1,0 +1,14 @@
+Installation
+
+official Nextjs Website 
+https://nextjs.org/docs
+
+creating a new Nextjs App ->  npx create-next-app@latest filename
+
+to start the server -> npm run dev 
+
+
+Folder Structure 
+
+public -> Add images & other media items 
+src -> contains app,components, utils and other stuff. Here app folder is given by default. 

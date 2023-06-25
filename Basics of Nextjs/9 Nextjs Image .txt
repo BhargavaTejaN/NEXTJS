@@ -1,0 +1,49 @@
+
+In general if we want to add an image in our application,
+we will add image like <img src="" alt="" />
+
+This is how we add image tag in general, but in NEXTJS we don't use This
+
+insted we Add to import <Image /> tag from the NEXTJS as 
+import Image from 'next/image'
+<Image src="" alt="" />
+
+along with alt and src in NEXTJS we need to add width and height also or else it will throw error 
+<Image src="" alt="" width={15} height={15} />
+
+suppose if we want to add image container and add styling to this container 
+then instead of width and height adding to image add this to image container 
+{
+    width : 15px;
+    height : 15px;
+    position : relative
+}
+we need to add fill={true} to the image container 
+<Image src="" alt="" fill={true} />
+
+
+other than this we can even use localimages as import 
+import Heros from 'public/hero.png'
+<Image src={Heros} alt="" />
+
+Normal way is more recemended
+
+Adding external image links in NEXTJS is a bit problamatic 
+if we want to add an external images we need to add the domain of that image in configuration file ie next.config.js 
+
+suppose this is the image url 
+https://images.pexels.com/photos/17255021/pexels-photo-17255021/free-photo-of-papershoot-camera.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load
+
+here images.pexels.com is the domain of the image url
+
+const nextConfig = {
+    images : {
+        domains : [
+            "images.pexels.com",
+            "timeanddate.com",
+            "c.tadst.com"
+        ]
+    }
+}
+
+this is how we need to add external images in NEXTJS

@@ -1,0 +1,17 @@
+
+For Authentication in Nextjs The latest way is authjs.dev 
+
+official documentation  --->  https://authjs.dev/
+
+npm i next-auth 
+
+we need an new folder in api named as auth and again create a new folder [...nextauth]
+
+we need to create with the same names because, nextjs will handle everything such as
+
+/api/auth/sigin, /api/auth/siginout, /api/auth/session and many more 
+
+copy this command --->  openssl rand -base64 32 
+go to this website ---> https://www.cryptool.org/en/cto/openssl
+
+paste the command there 

@@ -1,0 +1,49 @@
+cannot find module 'next/babel'
+
+if we face above error the recommended approch is 
+
+add .babelrc file to the root directory
+{
+    "presets": ["next/babel"],
+    "plugins": []
+}
+add this in .babelrc file 
+
+and in .eslintrc.json file 
+{
+  "extends": ["next/babel","next/core-web-vitals"]
+}
+add this in .eslintrc.json file 
+
+
+
+Error [OverwriteModelError]: Cannot overwrite `Post` model once compiled. in nextjs
+
+normal export : 
+const Post = mongoose.model("Post",postSchema);
+export default Post;
+
+new way of doing it:
+export default mongoose.models.Post || mongoose.model('Post',postSchema);
+
+
+
+Error While Fetching Data
+
+While fetching all blogs In the frontend instead of using this url "https://localhost:3004/api/blogs" 
+use this  "/api/blogs"
+
+the same why while fetching individual blogs in frontend instead of using this url `https://localhost:3004/api/blogs/${id}`
+use this `/api/blogs/${id}`
+
+
+Google oAuth Error 
+
+go to this page --> https://cloud.google.com/ --> console 
+signin with u r google account
+while create a new project, don't select any option either internal/external 
+after that adding new credentials,
+choose Authorised JavaScript origins url as  -->  http://localhost:3004
+choose Authorised redirect URIs as --> http://localhost:3004/api/auth/callback/google 
+
+

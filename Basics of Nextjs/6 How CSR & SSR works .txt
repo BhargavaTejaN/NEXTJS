@@ -1,0 +1,16 @@
+
+when we visit any website the server receives a request, 
+the server send an empty HTML file and a bunch of bundled js,
+our browser process those bundles and renders the final HTML file.
+
+so the initial load speed of an application can be slow because of process
+since the page is build on users engines can't index websites properly
+
+but on server side rendering when you vist the website, 
+the server recieves the request and renders the HTML and send's the final HTML page to our browser. 
+if we have an old phone/computer even it works fine and speed because our browser doesn't need to render from scratch
+
+it shows the initial page faster but since everything happends on server side we won't be able to intract with the user.
+
+
+if we want to create an event we have to create a client-side component

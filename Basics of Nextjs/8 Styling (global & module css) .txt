@@ -1,0 +1,4 @@
+
+They are 2 types of stylings global & module 
+global.css is a file where we can write common styles for all our entire application
+module.css files contain only the styling related to that particular component

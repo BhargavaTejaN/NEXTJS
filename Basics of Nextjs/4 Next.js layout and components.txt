@@ -1,0 +1,14 @@
+
+in src/app folder we can find a file named as layout.js 
+This is bascially parent component that is used by other pages, 
+what ever we write here it will be applicalbe or appered over all pages
+
+we can ever add our custom layout.jsx pages for all over pages individually
+
+Components Folder 
+
+in Components we can add reusable pages such as NavBar, Footer etc 
+such pages we place them in Components folder 
+here we no need to specify page.jsx as file name because this is not a page, it's a component 
+
+in layout.js we mention our NavBar and Footer Components

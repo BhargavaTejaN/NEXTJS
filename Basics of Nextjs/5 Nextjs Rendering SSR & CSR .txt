@@ -1,0 +1,5 @@
+SSR = Server Side Rendering 
+CSR = Client Side Rendering 
+
+By Default In Nextjs All Components Are on the Server side Rendering
+we can change to client side rendering by adding "use client" at the top of the file. 
